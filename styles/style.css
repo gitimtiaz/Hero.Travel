@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+/* common style  */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* content style  */
+.nav{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+}
+.icon h1{
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+#travel{
+    color: #FF5400;
+}
+
+
+.nav-item ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-item li{
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #424247;
+}
+.nav-item .home{
+    color: #FF5400;
+    font-weight: 700;
+}
+
+/* Hero  */
+.hero{
+    height: 600px;
+    background-image: url(../assets/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+}
