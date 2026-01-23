@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Travel</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -25,13 +26,27 @@
         </nav>
         <!-- hero  -->
          <div class="hero container">
-            <h1>Explore Your Travel</h1>
-            <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-            <div class="booking-container">
-                <div class="input-card"></div>
-                <div class="input-card"></div>
-                <div class="input-card"></div>
-                <div class="input-card find" ></div>
+            <div class="hero-box">
+                <h1>Explore Your Travel</h1>
+                <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+                <div class="booking-box">
+                    <form>
+                        <input class="card" type="text" placeholder="Where go">
+                        <select name="When" class="card" id="">
+                            <option value="when" selected disabled>When</option>
+                            <option value="test">test-1</option>
+                            <option value="test">test-2</option>
+                            <option value="test">test-3</option>
+                        </select>
+                        <select name="Select Type" class="card" id="">
+                            <option value="Select type" selected disabled>Select Type</option>
+                            <option value="test">test-1</option>
+                            <option value="test">test-2</option>
+                            <option value="test">test-3</option>
+                        </select>
+                    </form>
+                    <button class="card" id="main-btn"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Find Now</button>
+            </div>
             </div>
          </div>
 
