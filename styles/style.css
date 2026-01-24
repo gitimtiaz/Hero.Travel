@@ -180,6 +180,66 @@ img{
     width: 100%;
 }
 
+/* Choose Your Destination */
+.destination .text-top{
+    max-width: 650px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.destination h2{
+    font-size: 2.5rem;
+    margin-top: 80px;
+}
+.destination p{
+    margin-top: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(19, 19, 24, 0.7);
+}
+.img-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 24px;
+}
+.img-grid img{
+    width: 100%;
+}
+.img-grid div{
+    position: relative;
+}
+.img-grid div strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.img-grid .maldives,
+.img-grid .indonesia{
+    grid-column: span 6;
+}
+.img-grid .srilanka{
+    grid-column: span 4;
+}
+.img-grid .namerica{
+    grid-column: span 5;
+}
+.img-grid .kashmir{
+    grid-column: span 3;
+}
+.img-grid .bd{
+    grid-column: span 5;
+}
+.img-grid .bandorban{
+    grid-column: span 7;
+}
+
 
 
 
@@ -239,5 +299,28 @@ img{
     }
     .popular-tour .text h2{
         font-size: 1.25rem;
+    }
+    /* Destination  */
+    .destination{
+        max-width: 360px;
+        margin: auto;
+    }
+    .text-top h2{
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    .text-top p{
+        margin-top: 10px;
+    }
+    .img-grid{
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .destination div img{
+        width: 340px;
+        height: 200px;
+    }
+    .destination div strong{
+        font-size: 1.5rem;
     }
 }
