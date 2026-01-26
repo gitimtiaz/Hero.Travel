@@ -244,6 +244,60 @@ img{
     grid-column: span 7;
 }
 
+/* Why Choose Us  */
+.box-card{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.simple-card{
+    grid-column: span 2;
+}
+.price{
+    grid-column: 2/span 2;
+
+}
+.box-card img{
+    width: 64px;
+    height: 64px;
+}
+.simple-card{
+    padding: 30px;
+}
+.simple-card h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.simple-card p{
+    color: #5A5A5D;
+}
+.hotel{
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background-color: rgba(251, 181, 99, 0.05);
+    
+}
+.world{
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;
+    background-color: rgba(41, 206, 246, 0.05);
+    
+}
+.price{
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background-color: rgba(233, 68, 68, 0.05);
+    
+}
+
+
+
+
 /* Deals & Discounts  */
 .deal-discount .text-top{
     margin-bottom: 48px;
@@ -400,6 +454,24 @@ img{
     .destination div strong{
         font-size: 1.5rem;
     }
+    /* why choose us  */
+    .why-choose-us{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .text-top{
+        padding: 0px;
+    }
+    .box-card{
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    .simple-card{
+        grid-column: span 1;
+    }
+
+
 
     /* Deals & Discounts */
     .deal-discount{
