@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+
 }
 img{
     width: 100%;
@@ -181,17 +185,17 @@ img{
 }
 
 /* Choose Your Destination */
-.destination .text-top{
+.text-top{
     max-width: 650px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
-.destination h2{
+.text-top h2{
     font-size: 2.5rem;
     margin-top: 80px;
 }
-.destination p{
+.text-top p{
     margin-top: 24px;
     font-size: 1rem;
     font-weight: 500;
@@ -240,7 +244,80 @@ img{
     grid-column: span 7;
 }
 
+/* Deals & Discounts  */
+.deal-discount .text-top{
+    margin-bottom: 48px;
+}
+.img-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 50px 50px 50px;
+    border-radius: 16px;
 
+    display: flex;
+    justify-content: end;
+
+    background-image: url(../assets/swimming-pool.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.white-bg{
+    border-radius: 16px;
+    max-width: 570px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.white-bg .box-nav{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    color: #5A5A5D;
+}
+.white-bg .box-nav img{
+    width: 24px;
+    height: 24px;
+}
+.white-bg .box-nav div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.white-bg .text-mid h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.white-bg .text-mid p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #5A5A5D;
+}
+.white-bg .text-mid strong{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #FF5400;
+}
+.white-bg button{
+    width: fit-content;
+    border-radius: 8px;
+}
+
+#second-img-bg{
+    background-image: url(../assets/resort.png);
+    padding: 50px;
+    justify-content: start;
+}
 
 
 
@@ -323,4 +400,35 @@ img{
     .destination div strong{
         font-size: 1.5rem;
     }
+
+    /* Deals & Discounts */
+    .deal-discount{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .deal-discount .text-top{
+        margin-bottom: 24px;
+    }
+    .img-section{
+        flex-direction: column;
+        justify-content: end;
+        padding: 16px;
+        padding-top: 180px;
+
+    }
+    .white-bg{
+        padding: 24px;
+    }
+    .white-bg .box-nav{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .white-bg .box-nav .time{
+        grid-column: span 2;
+    }
+    #second-img-bg{
+        flex-direction: column;
+        justify-content: end;
+        padding: 16px;
+        padding-top: 180px;
+}
 }
