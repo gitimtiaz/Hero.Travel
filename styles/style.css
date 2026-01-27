@@ -141,6 +141,7 @@ img{
     background-color: #FF5400;
     color: #ffffff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* Our Popular Tour section  */
@@ -320,7 +321,7 @@ img{
 .white-bg{
     border-radius: 16px;
     max-width: 570px;
-    padding: 50px;
+    padding: 30px;
 
     display: flex;
     flex-direction: column;
@@ -330,10 +331,10 @@ img{
 }
 
 .white-bg .box-nav{
-    max-width: 400px;
+    max-width: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 15px;
 
     color: #5A5A5D;
 }
@@ -364,7 +365,7 @@ img{
 }
 .white-bg button{
     width: fit-content;
-    border-radius: 8px;
+    border-radius: 8px;  
 }
 
 #second-img-bg{
