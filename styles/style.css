@@ -136,6 +136,7 @@ img{
 }
 #main-btn{
     border: none;
+    border-radius: 8px;
     padding: 16px 30px;
 
     background-color: #FF5400;
@@ -206,11 +207,11 @@ img{
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
     gap: 24px;
 }
 .img-grid img{
     width: 100%;
+    cursor: pointer;
 }
 .img-grid div{
     position: relative;
@@ -224,6 +225,7 @@ img{
     font-size: 1.7rem;
     font-weight: 800;
     color: #ffffff;
+    /* cursor: pointer; */
 }
 .img-grid .maldives,
 .img-grid .indonesia{
@@ -372,6 +374,50 @@ img{
     background-image: url(../assets/resort.png);
     padding: 50px;
     justify-content: start;
+}
+.see-more{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* A Simple Perfect Place To Get Lost */
+.perfect-place{
+    margin-top: 100px;
+    display: flex;
+    gap: 28px;
+}
+.text-part h3{
+    max-width: 450px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+.text-part p{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #5A5A5D;
+}
+.text-part li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #131318;
+}
+.text-part button{
+    margin-top: 20px;
+}
+.img-part{
+    position: relative;
+}
+.img-part strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 
