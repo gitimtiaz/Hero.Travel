@@ -420,6 +420,64 @@ img{
     font-weight: 700;
 }
 
+    /* Newsletter */
+    .newsletter{
+        margin-top: 100px;
+        display: flex;
+        gap: 24px;
+    }
+    .news-form{
+        padding: 40px;
+        border: 1px solid #FF5400;
+        border-radius: 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .in{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .newsletter h3{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .newsletter p{
+        margin-top: 16px;
+        padding-bottom: 24px;
+        
+        border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+        color: #5A5A5D;
+    }
+    .newsletter input{
+        height: 52px;
+        border: none;
+        border-radius: 8px;
+        padding: 16px 20px;
+
+        background-color: rgba(19, 19, 24, 0.05);
+        color: rgba(19, 19, 24, 0.3);
+    }
+    .img-part button{
+        width: 250px;
+    }
+    .img-part button span{
+        font-size: 1.5rem;
+        font-weight: 800;
+
+    }
+    .img-part{
+        position: relative;
+    }
+    .img-part button{
+        position: absolute;
+        bottom: 15%;
+        right: 0;
+        transform: rotate(-30deg);
+    }
+
 
 
 /* responsive  */
@@ -559,5 +617,20 @@ img{
     }
     .perfect-place h3{
         font-size: 1.3rem;
+    }
+
+    /* newsletter */
+    .newsletter{
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        flex-direction: column;
+    }
+    .newsletter .img-part button{
+        max-width: 200px;
+    }
+    .newsletter .img-part button span{
+        font-size: 1.1rem;
     }
 }
