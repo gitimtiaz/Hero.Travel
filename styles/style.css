@@ -518,8 +518,6 @@ img{
         grid-column: span 1;
     }
 
-
-
     /* Deals & Discounts */
     .deal-discount{
         max-width: 350px;
@@ -549,5 +547,17 @@ img{
         justify-content: end;
         padding: 16px;
         padding-top: 180px;
-}
+    }
+
+    /* A Simple Perfect Place To Get Lost */
+    .perfect-place{
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        flex-direction: column;
+    }
+    .perfect-place h3{
+        font-size: 1.3rem;
+    }
 }
