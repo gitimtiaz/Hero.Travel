@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
-
+    scroll-behavior: smooth;
 }
 img{
     width: 100%;
@@ -134,7 +134,7 @@ img{
     background-color: #ffffff;
     color: rgba(19, 19, 24, 0.5);
 }
-#main-btn{
+.btn-primary{
     border: none;
     border-radius: 8px;
     padding: 16px 30px;
@@ -680,3 +680,119 @@ img{
         max-width: 300px;
     }
 }
+
+    /* Animation  */
+
+    /* hero  */
+    .hero h1 {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero p {
+  animation: fadeUp 1s ease forwards;
+}
+
+.booking-box {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* infinite */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 84, 0, 0.9);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 84, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 84, 0, 0);
+  }
+}
+
+.hero #main-btn {
+  animation: pulseGlow 2.5s infinite;
+}
+
+
+
+.scroll-indicator {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+  opacity: 0.8;
+  animation: bounceDown 1.8s infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+
+/* btn  */
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 84, 0, 0.5);
+}
+
+
+/* why choose us  */
+.simple-card {
+  transition: all 0.3s ease;
+}
+
+.simple-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+/* destination  */
+
+
+
+
+/* deals discount  */
+.white-bg {
+  transition: all 0.3s ease;
+}
+
+.img-section:hover .white-bg {
+  transform: translateY(-10px);
+}
+
+/* news letter  */
+.newsletter input:focus {
+  outline: none;
+  border: 2px solid #FF5400;
+  background-color: #fff;
+}
+
+/* footer  */
+.social img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+
+
